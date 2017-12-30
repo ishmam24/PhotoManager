@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="640.0" maxWidth="1024.0" minHeight="640.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.ImageWindowController">
+   <right>
+      <VBox alignment="CENTER" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets/>
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+         </padding>
+         <Button maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#addTag" prefWidth="200.0"
+                 text="Add Tag">
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+         </Button>
+         <Button maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#deleteTag" prefWidth="200.0"
+                 text="Delete Tag">
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+         </Button>
+         <Button maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#tagHistoryButton"
+                 prefWidth="200.0" text="Show Tag History">
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+         </Button>
+         <Button maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#imageHistoryButton"
+                 prefWidth="200.0" text="Show Name History">
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+         </Button>
+         <Button fx:id="openInDirectoryButton" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false"
+                 onAction="#openImageInDirectory" prefWidth="200.0" text="Open in Directory">
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+         </Button>
+         <Button fx:id="moveImageButton" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false"
+                 onAction="#moveImageAction" prefWidth="200.0" text="Move Image">
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+         </Button>
+      </VBox>
+   </right>
+   <top>
+      <ToolBar maxHeight="60.0" maxWidth="1024.0" minHeight="60.0" minWidth="1024.0" prefHeight="60.0"
+               prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+         </padding>
+         <BorderPane.margin>
+            <Insets/>
+         </BorderPane.margin>
+         <Button fx:id="back" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#backButton"
+                 prefWidth="70.0" text="Back"/>
+         <Label fx:id="imageName" alignment="CENTER" maxWidth="855.0" minWidth="800.0" prefHeight="20.0"
+                prefWidth="855.0" text="Label">
+            <font>
+               <Font name="System Bold" size="14.0"/>
+            </font>
+         </Label>
+      </ToolBar>
+   </top>
+   <center>
+      <ImageView fx:id="imageView" fitHeight="480.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      </ImageView>
+   </center>
+</BorderPane>

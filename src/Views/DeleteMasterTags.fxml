@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="300.0" maxWidth="250.0" minHeight="300.0" minWidth="250.0" prefHeight="300.0"
+      prefWidth="250.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Views.DeleteMasterTagsController">
+   <padding>
+      <Insets top="20.0"/>
+   </padding>
+   <ListView fx:id="tagList" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0"
+             prefWidth="200.0"/>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <Button maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#deleteTags"
+              prefWidth="70.0" text="Delete">
+         <HBox.margin>
+            <Insets right="10.0"/>
+         </HBox.margin>
+      </Button>
+      <Button maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#cancel" prefWidth="70.0"
+              text="Cancel">
+         <HBox.margin>
+            <Insets left="10.0"/>
+         </HBox.margin>
+      </Button>
+   </HBox>
+</VBox>

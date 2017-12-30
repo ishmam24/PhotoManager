@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="640.0" maxWidth="1024.0" minHeight="640.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Views.FileChooserController">
+    <ToolBar maxHeight="40.0" maxWidth="1024.0" minHeight="40.0" minWidth="1024.0" prefHeight="40.0" prefWidth="1024.0"
+             style="-fx-background-color: #383838;">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <Button maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#backButton" prefWidth="70.0"
+                text="Back" textAlignment="CENTER"/>
+        <Region maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="664.0"/>
+        <Button mnemonicParsing="false" onAction="#DirectoryButtonAction" text="Add Directory"/>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ImageButtonAction"
+                text="Add Images" textAlignment="CENTER"/>
+    </ToolBar>
+    <ListView fx:id="listView" prefHeight="561.0" prefWidth="1033.0"/>
+</VBox>

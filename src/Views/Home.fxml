@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="640.0" maxWidth="1024.0" minHeight="640.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.HomeWindowController">
+    <ToolBar fx:id="toolBar" maxHeight="40.0" maxWidth="1024.0" minHeight="40.0" minWidth="1024.0" prefHeight="40.0"
+             prefWidth="1024.0" style="-fx-background-color: #383838;">
+        <MenuBar prefHeight="39.0" prefWidth="539.0" stylesheets="@styles.css">
+            <Menu mnemonicParsing="false" text="Photo Manager">
+                <MenuItem mnemonicParsing="false" onAction="#helpButton" text="Help"/>
+                <MenuItem mnemonicParsing="false" onAction="#close" text="Close"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" onAction="#importImages" text="Import"/>
+                <MenuItem mnemonicParsing="false" onAction="#deleteItem" text="Delete"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+                <MenuItem mnemonicParsing="false" onAction="#refresh" text="Refresh"/>
+                <MenuItem mnemonicParsing="false" onAction="#emptyTrash" text="Empty Trash"/>
+                <MenuItem mnemonicParsing="false" onAction="#createTag" text="New Tag"/>
+                <MenuItem mnemonicParsing="false" onAction="#deleteTag" text="Delete Tag"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+                <MenuItem mnemonicParsing="false" onAction="#viewTrash" text="Trash"/>
+                <MenuItem mnemonicParsing="false" onAction="#masterLog" text="Master Log"/>
+                <MenuItem mnemonicParsing="false" onAction="#viewAllTags" text="All Tags"/>
+            </Menu>
+        </MenuBar>
+        <Region maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="64.0"/>
+        <TextField id="searchText" fx:id="searchText" alignment="CENTER_RIGHT"/>
+        <Button fx:id="searchButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#searchImage"
+                text="Search"/>
+    </ToolBar>
+    <ListView fx:id="listViewer" onMouseClicked="#openImage" prefHeight="600.0" prefWidth="1024.0"/>
+</VBox>

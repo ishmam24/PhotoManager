@@ -1,0 +1,23 @@
+.root{
+	-fx-background-color: #262626;
+}
+VBox{
+	-fx-background-color: #464646;
+}
+.button{
+}
+ToolBar{
+    -fx-background-color: #383838;
+}
+.label{
+    -fx-text-fill: white;
+}
+.menu, .menu-item, .context-menu {
+    -fx-background-color: #383838;
+}
+MenuBar{
+    -fx-background-color: #383838;
+}
+.menu-item:focused {
+     -fx-background-color: #969A9F;
+}

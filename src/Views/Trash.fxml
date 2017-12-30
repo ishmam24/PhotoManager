@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="640.0" maxWidth="1024.0" minHeight="640.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0"
+      stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Views.TrashWindowController">
+    <ToolBar maxHeight="60.0" maxWidth="1024.0" minHeight="41.0" minWidth="1024.0" prefHeight="41.0" prefWidth="1024.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <Button maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#goBack" prefWidth="70.0"
+                text="Back"/>
+        <Button fx:id="recoverItemButton" mnemonicParsing="false" onAction="#revertItem" text="Recover Item(s)"/>
+        <Region prefHeight="5.0" prefWidth="501.0"/>
+        <Button fx:id="deleteItemButton" mnemonicParsing="false" onAction="#deleteItem" text="Delete Item(s)"/>
+        <Button fx:id="emptyTrashButton" mnemonicParsing="false" onAction="#emptyTrash" text="Empty Trash"/>
+    </ToolBar>
+    <ListView fx:id="listView" prefHeight="600.0" prefWidth="1024.0"/>
+</VBox>

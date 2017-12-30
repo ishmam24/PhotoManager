@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" prefHeight="150.0"
+      prefWidth="300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Views.CreateTagWindowController">
+   <padding>
+      <Insets top="50.0"/>
+   </padding>
+   <TextField fx:id="tagTextField" maxWidth="200.0" minWidth="200.0" prefWidth="200.0"/>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <Button maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#addTag" prefWidth="70.0"
+              text="Create">
+         <HBox.margin>
+            <Insets right="20.0"/>
+         </HBox.margin>
+      </Button>
+      <Button maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefWidth="70.0"
+              text="Cancel">
+         <HBox.margin>
+            <Insets left="20.0"/>
+         </HBox.margin>
+      </Button>
+   </HBox>
+</VBox>

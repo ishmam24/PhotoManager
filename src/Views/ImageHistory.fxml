@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="640.0" maxWidth="1024.0" minHeight="640.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Views.ImageHistoryController">
+   <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3c3738;">
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#returnToBackScreen" text="Back"/>
+   </ToolBar>
+   <TableView fx:id="tableView" prefHeight="600.0" prefWidth="1024.0">
+      <columns>
+         <TableColumn fx:id="oldName" maxWidth="400.0" minWidth="100.0" prefWidth="345.0" text="Old Name"/>
+         <TableColumn fx:id="newName" maxWidth="500.0" minWidth="100.0" prefWidth="342.0" text="New Name"/>
+         <TableColumn fx:id="timeStamp" maxWidth="500.0" minWidth="100.0" prefWidth="335.0" text="Time Stamp"/>
+      </columns>
+   </TableView>
+</VBox>

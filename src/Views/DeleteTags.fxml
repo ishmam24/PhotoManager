@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="640.0" maxWidth="1024.0" minHeight="640.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.DeleteTagsWindowController">
+   <center>
+      <ImageView fx:id="imageView" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <VBox alignment="CENTER" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+         </padding>
+         <BorderPane.margin>
+            <Insets/>
+         </BorderPane.margin>
+         <ListView fx:id="tags" prefHeight="200.0" prefWidth="200.0"/>
+         <Button maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#deleteTagButton" prefWidth="200.0"
+                 text="Delete Tags">
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+         </Button>
+         <Button maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#cancelButton" prefWidth="200.0"
+                 text="Cancel"/>
+      </VBox>
+   </right>
+   <top>
+      <ToolBar maxHeight="60.0" maxWidth="1024.0" minHeight="60.0" minWidth="1024.0" prefHeight="60.0"
+               prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+         </padding>
+         <BorderPane.margin>
+            <Insets/>
+         </BorderPane.margin>
+         <Button fx:id="back" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="Back"/>
+         <Label fx:id="imageName" alignment="CENTER" maxWidth="837.0" minWidth="800.0" prefHeight="20.0"
+                prefWidth="837.0" text="Label">
+            <font>
+               <Font name="System Bold" size="14.0"/>
+            </font>
+         </Label>
+      </ToolBar>
+   </top>
+</BorderPane>

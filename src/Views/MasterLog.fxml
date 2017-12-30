@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="640.0" maxWidth="1024.0" minHeight="640.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Views.MasterLogWindowController">
+    <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3c3738;">
+        <Button mnemonicParsing="false" onAction="#returnToBackScreen" text="Back"/>
+        <Region prefHeight="28.0" prefWidth="857.0" stylesheets="@styles.css"/>
+    </ToolBar>
+    <TableView fx:id="tableView" prefHeight="600.0" prefWidth="1024.0">
+        <columns>
+            <TableColumn fx:id="message" maxWidth="870.0" minWidth="870.0" prefWidth="870.0" resizable="false"
+                         text="Action"/>
+            <TableColumn fx:id="timeStamp" maxWidth="153.0" minWidth="153.0" prefWidth="153.0" resizable="false"
+                         text="Time Stamp"/>
+        </columns>
+    </TableView>
+</VBox>
